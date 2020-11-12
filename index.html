@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!-- landing page with summary infomation -->
+<!-- by Bill Shi and Ethan Schaffer -->
+
+<html>
+
+	<header>
+		<title>UMD Fall 2020 Course Info</title>
+		<link rel='stylesheet' type='text/css' href='src/css/index.css'>
+		
+		<!-- data hardcoded as js code -->
+		<script src="src/data_prototypev1.js"></script>
+		<script src="src/summary_data.js"></script>
+		<script src="src/dept_summary.js"></script>
+		
+		<!-- js code implementing functionalities -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js'></script>
+		<script src="src/js scripts/index.js"></script>
+	</header>
+
+	<body>
+	
+		<!-- main content -->
+		<div id='page-container'>
+		
+			<!-- introduction paragraph -->
+			<h1>UMD Fall 2020 Course Information</h1>
+			<p>This webpage was a project developed to help students get information about their courses for the upcoming Fall 2020 semester. This project is not official, and should not be used as the only source of information a person accesses.</p>
+			<p>The data is provided by reading directly from the University of Maryland's schedule of classes, which can be found <a href="https://app.testudo.umd.edu/soc/">here</a>. The information on this site was last updated as of the time in the footer.</p>
+			<p>Please keep in mind that this is a personal project and is not affiliated with UMD. A person should always double-check <a href="https://app.testudo.umd.edu/soc/">Maryland's schedule of classes</a> before making any major decisions.</p>
+
+
+			<!-- link to other pages -->
+			<br>
+			<br>
+			<h2><a href="search.html">Course Info</a></h2>
+			<p>To search for more relevant information for your courses or department, click the link above.</p>
+			<br>
+			<br>
+			<h2><a href="depts.html">Breakdown by Department</a></h2>
+			<p>To see a summary the number of in person and online sections offered by department, and the total number of seats offered by instruction type, click the link above.</p>
+			
+			
+			<!-- pie chart graphics -->
+			<br>
+			<br>
+			<h2>Overall UMD Breakdown</h2>
+			<p>The below graphic details a summary of the number of in person and online sections offered by UMD, as well as the total number of seats offered by instruction type.</p>
+			<table>
+				<tr>
+					<td><img src="" alt="chart1" id="chart1" width="100%"></td>
+					<td><img src="" alt="chart2" id="chart2" width="100%"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center;padding: 0px 0px 10px 0px;">The percentage of sections</td>
+					<td style="text-align: center;padding: 0px 0px 10px 0px;">The percentage of seats</td>
+				</tr>
+			</table>
+			
+			
+			<!-- seat availibility summary -->
+			<p>We wanted to take a look at the number of course sections and the number of seats that were both online and in person. </p>
+			<p id="course_count_info"></p>
+			<p id="seat_count_info"></p>
+			
+			
+			<!-- frequently asked questions -->
+			<br>
+			<br>
+			<h2>FAQ</h2>
+			<br>
+			<b><i>Is any of this information final?</i></b>
+			<br>
+			<p>No, UMD hasn't stated when course info will be final. We are updating this page as the schedule of classes updates. You can see that last time we accessed Testudo in the footer down below.</p>
+			<b><i>Are you affiliated with UMD?</i></b>
+			<br>
+			<p>No. Ethan is a UMD student and Bill is a UMD alumni.</p>
+			<b><i>I found an issue, what can I do to report it?</i></b>
+			<br>
+			<p>You can make an issue on GitHub <a href="https://github.com/ethan-schaffer/UMD-Online-Course-Info/issues/new">here</a>.</p>
+			<b><i>How can I give feedback about potential improvements or request a new feature?</i></b>
+			<br>
+			<p>Feel free to send an email to <a href="mailto:ethan@schaffer.com">ethan@schaffer.com</a>.</p>
+			<b><i>Can I find your source code anywhere?</i></b>
+			<br>
+			<p>Our source code is public on GitHub, you can find it <a href="https://github.com/ethan-schaffer/UMD-Online-Course-Info">here</a>.</p>				
+			<b><i>I found a way to improve your code! What should I do?</i></b>
+			<br>
+			<p>You can submit a pull request on GitHub <a href="https://github.com/ethan-schaffer/UMD-Online-Course-Info/compare">here</a>.</p>
+			
+		</div>
+		
+		<!-- footer -->
+		<p id="footer"></p>
+	</body>
+
+</html>

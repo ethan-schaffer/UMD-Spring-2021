@@ -1,0 +1,59 @@
+/* set default margin and padding for elements*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer {
+	text-align: center;
+	padding: 10px;
+	width: 60%;
+	margin: auto;
+}
+
+/* Page Specific CSS */
+
+#lookup-container {
+	border: 3px solid #E03A3E; /* Maryland Red */
+}
+
+/* Search Bar CSS*/
+
+#class-lookup {
+	margin: 10px;
+}
+
+label[for=class-lookup] {
+	margin-left: 10px;
+}
+
+#filter-learning-mode {
+	margin: 10px;
+}
+
+label[for=filter-learning-mode] {
+	margin-left: 10px;
+}
+
+/* Results CSS */
+
+#search-return {
+	list-style-type: none;
+	border: 3px solid #FFD520; /* Maryland Gold */
+}
+
+.course-container {
+	border: 3px solid black;
+}
+
+.section_table {
+	table-layout: fixed ;
+	width: 100% ;
+	border-collapse: collapse ;
+}
+  
+.section_table td {
+	width: 50% ;
+	padding: 10px ;
+	text-align: left;
+}

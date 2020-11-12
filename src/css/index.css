@@ -1,0 +1,26 @@
+/* set default margin and padding for elements*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer {
+	text-align: center;
+	padding: 10px;
+	width: 60%;
+	margin: auto;
+}
+
+/* page specific css */
+
+p, h1, h2, img {
+	margin: 0px 0px 10px 0px;
+}
+
+#page-container {
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+	border: 3px solid #E03A3E; /* Maryland Red */
+}
+

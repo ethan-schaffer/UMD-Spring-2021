@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<!-- deptartment summary page -->
+<!-- by Ethan Schaffer and Bill Shi-->
+
+<!-- deptartment summary page-->
+<html>
+    <header>
+        <title>UMD Department Breakdown</title>
+		<link rel='stylesheet' type='text/css' href='src/css/dept_breakdown.css'>
+		
+		<!-- these are the hardcode of our data as javascript code -->
+        <script src="src/data_prototypev1.js"></script>
+        <script src="src/summary_data.js"></script>
+        <script src="src/dept_summary.js"></script>
+		
+		<!-- functionality javascript code-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js'></script>
+        <script src='src/js scripts/dept_breakdown.js'></script>
+    </header>
+
+	<body>
+		<!-- info section -->
+		<h1>Department Breakdown</h1>
+		<h3><a href="/UMD-Online-Course-Info/">UMD Fall 2020 Course Info</a></h3>
+		<p>Shows the number of in-person and online sections and seats by department. Use CRTL-F to search for the department you are looking for.</p>
+		
+		<!-- dept summary list -->
+		<ul id='summary-list'></ul>
+		
+		<!-- footer -->
+		<p id='footer'></p>
+	</body>
+</html>

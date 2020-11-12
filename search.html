@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- course infomation lookup webpage -->
+<!-- by Bill Shi and Ethan Schaffer -->
+
+<html>
+
+	<header>
+		<title>UMD Course Lookup</title>
+		<link rel='stylesheet' type='text/css' href='src/css/search.css'>
+		
+		<!-- data hardcoded as js code-->
+		<script src="src/data_prototypev1.js"></script>
+		
+		<!-- main functionalities -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+		<script src="src/js scripts/search.js"></script>
+	</header>
+
+	<body>
+		<!-- page navigation -->
+		<h1>Course Lookup</h1>
+		<h3><a href="/UMD-Online-Course-Info/">UMD Fall 2020 Course Info</a></h3>
+		
+		<!-- main content -->
+		<div id='lookup-container'>
+			<!-- search bar html-->
+			<ul style='list-style-type: None;display: inline-flex;'>
+				<li>
+					<label for='class-lookup'>Course:</label>
+					<input id='class-lookup' type='text'>
+				</li>
+				<li>
+					<label for='filter-learning-mode'>Instruction Type:</label>
+					<select id='filter-learning-mode'>
+						<option value='all'></option>
+						<option value='in person'>In Person</option>
+						<option value='online'>Online</option>
+						<option value='blended'>Blended</option>
+					</select>
+				</li>
+			</ul>
+			
+			<!-- search return container -->
+			<ul id='search-return'></ul>
+		</div>
+		
+		<!-- footer -->
+		<p id='footer'></p>
+	</body>
+
+</html>

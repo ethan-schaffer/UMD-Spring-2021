@@ -1,0 +1,39 @@
+/* set default margin and padding for elements*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer {
+	text-align: center;
+	padding: 10px;
+	width: 60%;
+	margin: auto;
+}
+
+/* page specfic css */
+html, body {
+	/* set height to 100% of parent (viewport) height */
+	height: 100%;
+}
+
+body {
+	/* important */
+	display: flex;
+	flex-direction: column;
+}
+
+#summary-list {
+	/* with 'flex' display in body (parent)*/
+	/* makes this box stretch to, at max, 100% of parent height*/
+	height: 100%;
+	
+	overflow: auto;
+	border: 3px solid #FFD520; /* Maryland Gold */
+}
+
+#summary-list .summary td {	
+	padding: 0px 10px 0px 0px;
+	/* for debug purposes */
+	/* border: 3px solid green; */
+}
